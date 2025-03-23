@@ -1,0 +1,373 @@
+:root{
+    --bBottom: #f35f09;
+    --couleur: black;
+    --bg: #928e8edc;
+   
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    /* text-align: center; */
+}
+header {
+    background: var(--bg) ;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    
+    
+}
+nav .logo{
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav .logo:hover {
+    color: #f35f09;
+    
+    /* border-bottom: 2px solid var(--bBottom); */
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f35f09;
+    border-bottom: 2px solid var(--bBottom);
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    header {
+        background: var(--bg) ;
+        color: #fff;
+        /* padding: 1rem 0; */
+        padding: 5px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+
+        margin-bottom: 20000%;
+    }
+    
+    nav{
+        display: block;
+        justify-content:space-around;
+        
+        
+    }
+    nav .logo{
+        padding-top: 15px;
+        font-size: 18px;
+        display: block;
+        text-align: center;
+        
+    }
+    
+    nav .logo:hover {
+        color: #f35f09;
+        /* border-bottom: 2px solid var(--bBottom); */
+    }
+    
+    
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: bolck;
+        text-align: center;
+        
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s ease;
+        font-size: 14px;
+    }
+    
+    nav ul li a:hover {
+        color: #f35f09;
+        border-bottom: 2px solid var(--bBottom);
+    }
+
+    h1{
+        display: block;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    
+    #about .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        width: 90%;
+        transform: translateX(-45px);
+        
+    }
+}
+
+
+
+section {
+    padding: 60px 20px;
+    margin-top: 50px;
+    
+     
+    
+   
+    
+}
+
+#about .container{
+    display: flex;
+    flex-wrap: wrap; 
+
+    /* display: grid;
+    grid-template-columns: 1fr auto; */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    margin: 0 20% 0 20%;
+}
+
+#about .container p{
+    /* width: 100%; */
+    max-width: 500px;
+    font-size: 18px;
+    
+}
+
+#about .container img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+#about .container p{
+    text-align: justify;
+    line-height: 28px;
+}
+
+#about .container button{
+    background-color: #333;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+.project {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    
+    justify-content: center;
+
+}
+h3{
+    text-align: center;
+}
+
+h2{
+   text-align: center; 
+}
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill {
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    box-shadow: 2px 2px 20px var(--couleur);
+
+    text-align: center;
+    
+}
+
+.skill:hover{
+    /* transform: scale(1.2);
+    transition: 2s; */
+
+    transform: scale(1.1);
+    transition: 0.5s;
+    
+}
+
+.skill img {
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    width: 30%;
+    max-height: 280px;
+    margin: 12px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 1px 20px var(--couleur);
+    
+}
+.project:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    
+    
+}
+.project img {
+    /* width: 100%; */
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+.m img {
+    height: 215px;
+    
+}
+
+#flyerImgProject{
+    height: 215px;
+}
+
+#RetouMalison{
+    height: 215px;
+}
+
+/* .ProjectImg1{
+   height: 300px;
+} */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    .project {
+        
+        margin: 5px;
+
+        width: 80%;
+        
+        
+    }
+    .skill{
+        margin: 5px;
+
+        width: 80%;
+    }
+}
+
+/* .ProjectImg1{
+    background-image: url('./Images/PROJET\ AICHATA\ SERVICE.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    background-size: 100%;
+    
+    width: %;
+} */
+
+.containerField{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-right: 10%;
+    
+}
+form input, form textarea, form button {
+    display: block; 
+    width: 150%;
+    margin: 10px ;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+}
+form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    .containerField{
+        display: flex;
+        justify-content: center;
+       margin-right: 40%;
+        
+    }
+
+    form input, form textarea, form button {
+        /* display: block;  */
+        width: 150%;
+        margin: 10px ;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        
+    }
+}
+
+footer {
+    background: var(--bg);
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
